@@ -12,11 +12,10 @@
 <body>
     <!--Beginning of header-->
     <header>
-        <div class="self">
-            <h1>
+        <div class="header">
+            <h1 class="name-header">
                 Brian Gomez
             </h1>
-            <img src="./portfolio avatar.jpg" alt="Brian Gomez avatar" width="200" height="200">
         </div>
         <nav>
             <ul>
@@ -34,47 +33,63 @@
     </header>
     <!--End of header-->
 
-
     <!--Beginnig of hero-->
     <section>
-        <div>
+        <div class="hero">
             <!--Background image is placed here-->
-            <h2>Subtitle</h2>
+            <div class="hero-img">
+                <img src="./portfolio avatar.jpg" alt="Brian Gomez avatar" width="200" height="200">
+            </div>
         </div>
     </section>
     <!--End of hero-->
 
     <!--Beginning of About Me-->
     <section id="About-Me">
-        <div>
+        <div class="about-header">
             <h2>
                 About Me
             </h2>
+        </div>
+        <div class="about-p">
             <p>
-                I am a recent Rutgers University graduate with a Bachelors in Mechanical Engineering and a certificate
+                I am a recent Rutgers University graduate with a Bachelors in Mechanical Engineering and a
+                certificate
                 in Energy.
                 <br>
-                I am currently in the Rutgers Coding Bootcamp where I am learning different programming lanaguages and
+                I am currently in the Rutgers Coding Bootcamp where I am learning different programming lanaguages
+                and
                 how to create web applications using the latest
                 techniques and
             </p>
         </div>
+
     </section>
     <!--End of About Me-->
 
     <!--Beginning of Work-->
     <section id="Work">
-        <div>
+        <div class="work-header">
             <h2>
                 Work
             </h2>
-            <div>
+        </div>
+        <div>
+            <div class="run-buddy-link">
                 <a href="https://briandgomez.github.io/run-buddy">
-                    <img src="./run-buddy.PNG" alt="Find Runnnig Trainer" width="100%" height="500" border="5">
+                    <img src="./run-buddy.PNG" alt="Find Running Trainer" width="100%" height="500" border="5">
+                    <div class="text-over-img">
+                        <p>Run-Buddy (CSS,HTML)</p>
+                    </div>
                 </a>
-
+            </div>
+            <div class="refactor-link">
                 <a href="https://briandgomez.github.io/C1-Code-Refactor/">
-                    <img src="./code-refactor project.jpg" alt="Code Refactor Project" width="500" height="300" border="2">
+                    <img src="./code-refactor project.jpg" alt="Code Refactor Project" width="45%" height="300"
+                        border="2">
+                        <div class="text-over-img">
+                            <p>Code-Refactor (HTML,CSS)</p>
+                        </div>
                 </a>
             </div>
         </div>
@@ -84,13 +99,15 @@
     <!--Beginning of Contact Me-->
     <section id="Contact-Me">
         <div>
-            <h2>
+            <h2 class="contact-header">
                 Contact Me
             </h2>
+        </div>
+        <div>
             <nav>
-                <p>908.764.8798</p>
-                <a href="https://github.com/briandgomez">Github</a>
-                <a href="https://www.linkedin.com/in/brian-gomez-8a5a85211">LinkedIn</a>
+                <p class="contact-p">908.764.8798</p>
+                <a class="github-link" href="https://github.com/briandgomez">Github</a>
+                <a class="linkedin-link" href="https://www.linkedin.com/in/brian-gomez-8a5a85211">LinkedIn</a>
             </nav>
         </div>
     </section>
