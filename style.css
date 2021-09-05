@@ -3,12 +3,15 @@
     --relative-position: relative;
     --left-orientation: 80%;
     --initiate-flex: flex;
+    --width-50: 50%;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;;
+    padding: 0;
+    background-image: url(./portfolio\ background.jpg);
+    background-attachment: fixed;
 }
 
 header {
@@ -34,10 +37,6 @@ header nav ul a {
     text-decoration: none;
 }
 
-.hero-img {
-    position: var(--relative-position);
-}
-
 .hero-img img {
     display: block;
     margin-left: auto;
@@ -49,7 +48,6 @@ header nav ul a {
     display: var(--initiate-flex);
     margin: 30px;
     justify-content: center;
-    position: var(--relative-position);
 }
 
 #About-Me h2 {
@@ -65,9 +63,10 @@ header nav ul a {
 }
 
 .about-p {
-    padding: 5px;
     margin: 10px;
+    padding: 5px;
     position: var(--relative-position);
+    font-size: 20px;
 }
 
 #Work {
@@ -86,8 +85,8 @@ header nav ul a {
     border-bottom: 3px solid black;
     margin: 10px;
     padding: 5px;
-    width: 50%;
-    position: relative;
+    width: var(--width-50);
+    position: var(--relative-position);
     left: 26%;
 }
 
@@ -107,26 +106,26 @@ header nav ul a {
     width: 70%;
     height: 60%;
     left: 16%;
-    position: relative;
+    position: var(--relative-position);
 }
 
 .refactor-link img {
     border: 3px solid darkturquoise;
-    width: 50%;
+    width: var(--width-50);
     height: 40%;
     left: 25%;
-    position: relative
+    position: var(--relative-position)
 }
 
 
 .text-over-img-1{
-    position: relative;
+    position: var(--relative-position);
     margin-top: 10px;
     left: 46%;
 }
 
 .text-over-img-2 {
-    position: relative;
+    position: var(--relative-position);
     margin-top: 10px;
     left: 46%;
 }
@@ -186,8 +185,8 @@ header nav ul a {
     }
 
     .about-p {
-        padding: 5px;
         margin: 10px;
+        padding: 5px;
         top: 50px;
     }
 
@@ -211,14 +210,14 @@ header nav ul a {
     }
     
     .contact-header {
-        width: 50%;
+        width: var(--width-50);
         left: 80%;
     }
 
     #Contact-Me nav ul {
-        width: 50%;
+        width: var(--width-50);
         left: 32%;
-        position: relative;
+        position: var(--relative-position);
 
     }
 }
@@ -240,7 +239,7 @@ header nav ul a {
     }
 
     .hero-img img {
-        position: relative;
+        position: var(--relative-position);
         left: -50%;
     }
 
@@ -252,25 +251,20 @@ header nav ul a {
         margin: 0px;
         padding: 0px;
         border: none;
-        position: relative;
+        position: var(--relative-position);
     }
 
     .work-header h2 {
         border-bottom: 2px solid black;
     }
 
-    .run-buddy-link {
-        width: 110%;
-        right: 15%;
-    }
-
-    .refactor-link {
+    .run-buddy-link, .refactor-link {
         width: 110%;
         right: 15%;
     }
 
     .contact-header {
-        width: 50%;
+        width: var(--width-50);
         left: 54%;
     }
 
