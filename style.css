@@ -1,34 +1,55 @@
 :root {
     --text-center: center;
+    --relative-position: relative;
+    --left-orientation: 80%;
+    --initiate-flex: flex;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;;
+}
+
+header {
+    position: var(--relative-position);
 }
 
 .name-header {
     text-align: var(--text-center);
+    position: var(--relative-position);
 }
 
 header nav ul {
     margin: 15px;
     padding: 0px;
-    display: flex;
+    display: var(--initiate-flex);
     justify-content:space-around;
     list-style-type: none;
     font-size: 25px;
+    position: var(--relative-position);
 }
 
 header nav ul a {
     text-decoration: none;
 }
 
+.hero-img {
+    position: var(--relative-position);
+}
+
 .hero-img img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    position: var(--relative-position);
 }
 
 #About-Me {
-    display: flex;
+    display: var(--initiate-flex);
     margin: 30px;
     justify-content: center;
+    position: var(--relative-position);
 }
 
 #About-Me h2 {
@@ -40,15 +61,17 @@ header nav ul a {
     border-right: 3px solid black;
     margin: 10px;
     padding: 5px;
+    position: var(--relative-position);
 }
 
 .about-p {
     padding: 5px;
     margin: 10px;
+    position: var(--relative-position);
 }
 
 #Work {
-    display: flex;
+    display: var(--initiate-flex);
     margin: 30px;
     padding: 0px;
     justify-content:center;
@@ -68,22 +91,25 @@ header nav ul a {
 
 .run-buddy-link, .refactor-link {
     padding: 25px;
-    position: relative;
+    position: var(--relative-position);
     font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .run-buddy-link img, .refactor-link img {
     border: 3px solid darkturquoise;
 }
+
 .text-over-img-1{
     position: absolute;
-    margin: 10px;
+    margin-top: 10px;
+    margin-left: 500px;
 }
 
 .text-over-img-2 {
     position: absolute;
-    margin-top: -15px;
-    margin-left: 8px;
+    margin-top: 10px;
+    margin-left: 180px;
 }
 .text-over-img-1 p, .text-over-img-2 p {
     color: darkturquoise;
@@ -93,13 +119,87 @@ header nav ul a {
 .contact-header {
     text-align: var(--text-center);
     text-decoration: underline;
+    position: var(--relative-position);
 }
 
 #Contact-Me nav ul {
     margin: 15px;
     padding: 0px;
-    display: flex;
+    display: var(--initiate-flex);
     justify-content:space-around;
     list-style-type: none;
     font-size: 25px;
 }
+
+#Contact-Me nav ul li {
+    position: var(--relative-position);
+}
+
+
+@media screen and (max-width: 980px) {
+    body {
+        display: var(--initiate-flex);
+        flex-wrap: wrap;
+    }
+
+    header nav ul {
+        left: var(--left-orientation);
+    }
+
+    header nav ul li {
+       padding: 0 10px; 
+    }
+
+    .name-header {
+        left: var(--left-orientation);
+    }
+
+    .hero-img img {
+        width: 100%;
+        height: 130px;
+        top: 90px;
+        left: 50%;
+    }
+
+    .about-header {
+        top: 50px;
+    }
+
+    .about-p {
+        padding: 5px;
+        margin: 10px;
+        top: 50px;
+    }
+
+    .contact-header {
+        left: var(--left-orientation);
+    }
+
+    #Contact-Me nav ul li {
+        padding: 0px 15px;
+        left: var(--left-orientation)
+    }
+
+    .run-buddy-link img {
+        width: 100%
+    }
+
+    .refactor-link img {
+        width: 80%;
+    }
+};
+
+
+@media screen and (max-width: 768px) {
+    body {
+        display: var(--initiate-flex);
+        flex-wrap: wrap;
+    }
+};
+
+@media screen and (max-width: 575px) {
+    body {
+        display: var(--initiate-flex);
+        flex-wrap: wrap;
+    }
+};
