@@ -71,7 +71,6 @@ header nav ul a {
 }
 
 #Work {
-    display: var(--initiate-flex);
     margin: 30px;
     padding: 0px;
     justify-content:center;
@@ -84,9 +83,12 @@ header nav ul a {
 }
 
 .work-header {
-    border-right: 3px solid black;
+    border-bottom: 3px solid black;
     margin: 10px;
     padding: 5px;
+    width: 50%;
+    position: relative;
+    left: 26%;
 }
 
 .run-buddy-link, .refactor-link {
@@ -100,16 +102,33 @@ header nav ul a {
     border: 3px solid darkturquoise;
 }
 
+.run-buddy-link img {
+    border: 3px solid darkturquoise;
+    width: 70%;
+    height: 60%;
+    left: 16%;
+    position: relative;
+}
+
+.refactor-link img {
+    border: 3px solid darkturquoise;
+    width: 50%;
+    height: 40%;
+    left: 25%;
+    position: relative
+}
+
+
 .text-over-img-1{
-    position: absolute;
+    position: relative;
     margin-top: 10px;
-    margin-left: 500px;
+    left: 46%;
 }
 
 .text-over-img-2 {
-    position: absolute;
+    position: relative;
     margin-top: 10px;
-    margin-left: 180px;
+    left: 46%;
 }
 .text-over-img-1 p, .text-over-img-2 p {
     color: darkturquoise;
@@ -137,6 +156,7 @@ header nav ul a {
 
 
 @media screen and (max-width: 980px) {
+    
     body {
         display: var(--initiate-flex);
         flex-wrap: wrap;
@@ -181,25 +201,110 @@ header nav ul a {
     }
 
     .run-buddy-link img {
-        width: 100%
+        width: 100%;
+        left: 3%;
     }
 
     .refactor-link img {
         width: 80%;
+        left: 11%;
     }
-};
+    
+    .contact-header {
+        width: 50%;
+        left: 80%;
+    }
+
+    #Contact-Me nav ul {
+        width: 50%;
+        left: 32%;
+        position: relative;
+
+    }
+}
 
 
 @media screen and (max-width: 768px) {
+    
     body {
         display: var(--initiate-flex);
         flex-wrap: wrap;
     }
-};
+
+    .name-header {
+        left: 50%;
+    }
+
+    header nav ul {
+        left: 50%;
+    }
+
+    .hero-img img {
+        position: relative;
+        left: -50%;
+    }
+
+    .about-p p {
+        width: 100%;
+    }
+
+    .work-header {
+        margin: 0px;
+        padding: 0px;
+        border: none;
+        position: relative;
+    }
+
+    .work-header h2 {
+        border-bottom: 2px solid black;
+    }
+
+    .run-buddy-link {
+        width: 110%;
+        right: 15%;
+    }
+
+    .refactor-link {
+        width: 110%;
+        right: 15%;
+    }
+
+    .contact-header {
+        width: 50%;
+        left: 54%;
+    }
+
+    #Contact-Me nav ul {
+        width: 56%;
+        left: 3%;
+    }
+}
+
 
 @media screen and (max-width: 575px) {
+    
     body {
         display: var(--initiate-flex);
         flex-wrap: wrap;
     }
-};
+
+    .work-header {
+        left: 41%;
+    }
+
+     .text-over-img-1 {
+        left: 59%;
+     }
+
+    .run-buddy-link img {
+        left: 22%;
+    }
+
+    .refactor-link {
+        left: 4%;
+    }
+
+    .text-over-img-2 {
+        left: 36%;
+    }
+}
