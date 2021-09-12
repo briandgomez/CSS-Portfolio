@@ -10,7 +10,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-image: url(./portfolio\ background.jpg);
+    background-image: url(./images/portfolio\ background.jpg);
     background-attachment: fixed;
 }
 
@@ -90,14 +90,14 @@ header nav ul a {
     left: 26%;
 }
 
-.run-buddy-link, .refactor-link {
+.run-buddy-link, .refactor-link, .pass-link {
     padding: 25px;
     position: var(--relative-position);
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
-.run-buddy-link img, .refactor-link img {
+.run-buddy-link img, .refactor-link img, .pass-link img {
     border: 3px solid darkturquoise;
 }
 
@@ -109,7 +109,7 @@ header nav ul a {
     position: var(--relative-position);
 }
 
-.refactor-link img {
+.refactor-link img, .pass-link img {
     border: 3px solid darkturquoise;
     width: var(--width-50);
     height: 40%;
@@ -124,12 +124,12 @@ header nav ul a {
     left: 46%;
 }
 
-.text-over-img-2 {
+.text-over-img-2, .text-over-img-3 {
     position: var(--relative-position);
     margin-top: 10px;
     left: 46%;
 }
-.text-over-img-1 p, .text-over-img-2 p {
+.text-over-img-1 p, .text-over-img-2 p, .text-over-img-3 {
     color: darkturquoise;
     text-decoration: underline;
 }
@@ -204,7 +204,7 @@ header nav ul a {
         left: 3%;
     }
 
-    .refactor-link img {
+    .refactor-link img, .pass-link img {
         width: 80%;
         left: 11%;
     }
@@ -258,7 +258,7 @@ header nav ul a {
         border-bottom: 2px solid black;
     }
 
-    .run-buddy-link, .refactor-link {
+    .run-buddy-link, .refactor-link, .pass-link {
         width: 110%;
         right: 15%;
     }
@@ -294,11 +294,11 @@ header nav ul a {
         left: 22%;
     }
 
-    .refactor-link {
+    .refactor-link, .pass-link {
         left: 4%;
     }
 
-    .text-over-img-2 {
+    .text-over-img-2, .text-over-img-3 {
         left: 36%;
     }
 }
