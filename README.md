@@ -10,4 +10,3 @@ A portfolio is a very important tool for web developers since it allows them to 
 By clicking on any of the images presented in the 'Work' section, users will be taken to the deployed application.
  
 ## Website
-https://briandgomez.github.io/C2-Professional-Portfolio/
