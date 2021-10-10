@@ -15,10 +15,6 @@
     background-attachment: fixed;
 }
 
-header {
-    position: var(--relative-position);
-}
-
 .name-header {
     text-align: var(--text-center);
     position: var(--relative-position);
@@ -39,7 +35,7 @@ header nav ul a {
 }
 
 .hero-img img {
-    display: block;
+    display: var(--initiate-flex);
     margin-left: auto;
     margin-right: auto;
     position: var(--relative-position);
@@ -91,18 +87,18 @@ header nav ul a {
     left: 26%;
 }
 
-.run-buddy-link, .refactor-link, .pass-link {
+.recipe-link, .refactor-link, .pass-link {
     padding: 25px;
     position: var(--relative-position);
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
-.run-buddy-link img, .refactor-link img, .pass-link img {
+.recipe-link img, .refactor-link img, .pass-link img {
     border: 3px solid darkturquoise;
 }
 
-.run-buddy-link img {
+.recipe-link img {
     border: 3px solid darkturquoise;
     width: 70%;
     height: 60%;
@@ -200,7 +196,7 @@ header nav ul a {
         left: var(--left-orientation)
     }
 
-    .run-buddy-link img {
+    .recipe-link img {
         width: 100%;
         left: 3%;
     }
@@ -259,7 +255,7 @@ header nav ul a {
         border-bottom: 2px solid black;
     }
 
-    .run-buddy-link, .refactor-link, .pass-link {
+    .recipe-link, .refactor-link, .pass-link {
         width: 110%;
         right: 15%;
     }
@@ -291,7 +287,7 @@ header nav ul a {
         left: 59%;
      }
 
-    .run-buddy-link img {
+    .recipe-link img {
         left: 22%;
     }
 
