@@ -5,6 +5,11 @@
     --left-orientation: 80%;
     --initiate-flex: flex;
     --width-50: 50%;
+    --horizontal-scroll: hidden;
+}
+
+body {
+    overflow-x: var(--horizontal-scroll);
 }
 
 * {
@@ -87,14 +92,14 @@ header nav ul a {
     left: 26%;
 }
 
-.recipe-link, .refactor-link, .pass-link {
+.recipe-link, .code-quiz, .pass-link, .dashboard {
     padding: 25px;
     position: var(--relative-position);
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
-.recipe-link img, .refactor-link img, .pass-link img {
+.recipe-link img, .code-quiz img, .pass-link img, .dashboard img {
     border: 3px solid darkturquoise;
 }
 
@@ -106,7 +111,7 @@ header nav ul a {
     position: var(--relative-position);
 }
 
-.refactor-link img, .pass-link img {
+.code-quiz img, .pass-link img, .dashboard img {
     border: 3px solid darkturquoise;
     width: var(--width-50);
     height: 40%;
@@ -201,7 +206,7 @@ header nav ul a {
         left: 3%;
     }
 
-    .refactor-link img, .pass-link img {
+    .code-quiz img, .pass-link img, .dashboard img {
         width: 80%;
         left: 11%;
     }
@@ -255,7 +260,7 @@ header nav ul a {
         border-bottom: 2px solid black;
     }
 
-    .recipe-link, .refactor-link, .pass-link {
+    .recipe-link, .code-quiz, .pass-link, .dashboard {
         width: 110%;
         right: 15%;
     }
@@ -291,7 +296,7 @@ header nav ul a {
         left: 22%;
     }
 
-    .refactor-link, .pass-link {
+    .code-quiz, .pass-link, .dashboard {
         left: 4%;
     }
 
