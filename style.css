@@ -24,11 +24,14 @@ body {
     font-family: monospace;
 }
 
- #Work img {
+#Work img {
     border: 5px solid #830909ea;
     border-radius: 10px;
- }
+}
 
+div#password, div#dashboard, div#scheduler {
+    margin-top: 15px;
+}
 
 #Contact-Me nav ul {
     margin: 15px;
@@ -45,7 +48,7 @@ body {
     }
 }
 
-#quiz img, #password img, #dashboard img {
+#quiz img, #password img, #dashboard img, #scheduler img {
     border: 5px solid #830909ea;
     border-radius: 10px;
 }
@@ -55,7 +58,7 @@ body {
         display: none;
     }
 
-    div#quiz, div#password, div#dashboard {
+    div#quiz, div#password, div#dashboard, div#scheduler {
         width: 100%;
     }
 }
@@ -66,7 +69,7 @@ body {
         display: none;
     }
 
-    div#quiz, div#password, div#dashboard {
+    div#quiz, div#password, div#dashboard, div#scheduler {
         width: 100%;
     }
 }
