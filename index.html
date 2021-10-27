@@ -7,52 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Brian Portfolio</title>
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <body>
     <!--Beginning of header-->
     <header>
-        <h1 class="name-header">Brian Gomez</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#About-Me">About Me</a>
-                </li>
-                <li>
-                    <a href="#Work">Work</a>
-                </li>
-                <li>
-                    <a href="#Contact-Me">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
+        <h1 class="text-center">Brian Gomez</h1>
+        <ul class="d-flex nav nav-pills nav-fill">
+            <li class="nav-item p-1">
+                <a class="nav-item nav-link active" href="#About-Me">About Me</a>
+            </li>
+            <li class="nav-item p-1">
+                <a class="nav-item nav-link active" href="#Work">Work</a>
+            </li>
+            <li class="nav-item p-1">
+                <a class="nav-item nav-link active" href="#Contact-Me">Contact Me</a>
+            </li>
+        </ul>
     </header>
     <!--End of header-->
 
     <!--Beginnig of hero-->
-    <section>
-        <div class="hero">
-            <!--Background image is placed here-->
-            <div class="hero-img">
-                <img src="./images/avatar.jpg" alt="Brian Gomez avatar" width="200" height="200">
-            </div>
-        </div>
-    </section>
+    <div id="avatar" class="d-flex mx-auto py-1" style="width: 200px;">
+        <img src="./images/avatar.jpg" alt="Avatar" height="200">
+    </div>
     <!--End of hero-->
 
     <!--Beginning of About Me-->
     <section id="About-Me">
-        <div class="about-header">
+        <div class="d-flex justify-content-center py-2">
             <h2>
-                About Me
+                <u>
+                    About Me
+                </u>
             </h2>
         </div>
-        <div class="about-p">
+        <div class="d-flex text-center">
             <p>
                 I am a recent Rutgers University graduate with a Bachelors in Mechanical Engineering and a
                 certificate
                 in Energy.
-                <br>
                 I am currently in the Rutgers Coding Bootcamp where I am learning different programming lanaguages and
                 how to create web applications using the latest tools.
             </p>
@@ -62,48 +56,44 @@
     <!--End of About Me-->
 
     <!--Beginning of Work-->
-    <section id="Work">
-        <div class="work-header">
+    <section class="container" id="Work">
+        <div class="d-flex justify-content-center">
             <h2>
-                Work
+                <u>
+                    Work
+                </u>
             </h2>
         </div>
-        <!--Run-buddy Tutorial-->
-        <div>
-            <div class="recipe-link">
-                <div class="text-over-img-1">
-                    <p>Recipe Generator</p>
-                </div>
+        <!--Recipe Group Project-->
+        <div class="row">
+            <p class="d-flex justify-content-center">Recipe Generator</p>
+            <div class="col-12 d-flex justify-content-center">
                 <a href="https://mital2021.github.io/Recipe-Generator/">
                     <img src="./images/recipegenerator.jpg" alt="Generate Recipes based on cuisne name" width="100%"
                         height="300">
                 </a>
             </div>
+        </div>
+        <div class="row py-5">
             <!--Code Quiz-->
-            <div class="code-quiz">
-                <div class="text-over-img-2">
-                    <p>Code Quiz</p>
-                </div>
-                <a href="https://briandgomez.github.io/C4-Code-Quiz/">
-                    <img src="./images/code quiz.PNG" alt="Code Quiz Generator" width="45%" height="300">
+            <div id="quiz" class="col-6">
+                <p class="d-flex justify-content-center">Code Quiz </p>
+                <a class="d-flex justify-content-center" href="https://briandgomez.github.io/C4-Code-Quiz/">
+                    <img src="./images/code quiz.PNG" alt="Code Quiz Generator" width="70%" height="290">
                 </a>
             </div>
             <!--Password generator -->
-            <div class="pass-link">
-                <div class="text-over-img-3">
-                    <p>Password Generator</p>
-                </div>
-                <a href="https://briandgomez.github.io/C3-Password-Generator/">
-                    <img src="./images/password generator.PNG" alt="Code Refactor Project" width="45%" height="300">
+            <div id="password" class="col-6">
+                <p class="d-flex justify-content-center">Password Generator</p>
+                <a class="d-flex justify-content-center" href="https://briandgomez.github.io/C3-Password-Generator/">
+                    <img src="./images/password generator.PNG" alt="Code Refactor Project" width="70%" height="290">
                 </a>
             </div>
             <!--Weather Dashboard -->
-            <div class="dashboard">
-                <div class="text-over-img-3">
-                    <p>Weather Dashboard</p>
-                </div>
-                <a href="https://briandgomez.github.io/C6-Weather-Dashboard/">
-                    <img src="./images/weather dashboard.PNG" alt="Dasboard" width="45%" height="300">
+            <div id="dashboard" class="col-6">
+                <p class="d-flex justify-content-center">Weather Dashboard</p>
+                <a class="d-flex justify-content-center" href="https://briandgomez.github.io/C6-Weather-Dashboard/">
+                    <img src="./images/weather dashboard.PNG" alt="Dasboard" width="70%" height="290">
                 </a>
             </div>
         </div>
@@ -111,23 +101,25 @@
     <!--End of Work-->
 
     <!--Beginning of Contact Me-->
-    <section id="Contact-Me">
-        <div>
-            <h2 class="contact-header">
-                Contact Me
+    <section class="mt-5" id="Contact-Me">
+        <div class="container">
+            <h2 class="text-center">
+                <u>
+                    Contact Me
+                </u>
             </h2>
         </div>
         <div>
             <nav>
-                <ul>
-                    <li>
-                        <p class="contact-p">908.764.8798</p>
+                <ul class="d-flex justify-content-around">
+                    <li class="nav-item p-1">
+                        <p>908.764.8798</p>
                     </li>
-                    <li>
-                        <a class="github-link" href="https://github.com/briandgomez">Github</a>
+                    <li class="nav-item p-1">
+                        <a href="https://github.com/briandgomez">Github</a>
                     </li>
-                    <li>
-                        <a class="linkedin-link" href="https://www.linkedin.com/in/brian-gomez-8a5a85211">LinkedIn</a>
+                    <li class="nav-item p-1">
+                        <a href="https://www.linkedin.com/in/brian-gomez-8a5a85211">LinkedIn</a>
                     </li>
                 </ul>
             </nav>

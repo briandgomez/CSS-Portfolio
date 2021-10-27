@@ -10,137 +10,25 @@
 
 body {
     overflow-x: var(--horizontal-scroll);
+    background-color: #b3abab !important;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-image: url(./images/portfolio\ background.jpg);
     background-attachment: fixed;
 }
 
-.name-header {
-    text-align: var(--text-center);
-    position: var(--relative-position);
+#Work p {
+    font-family: monospace;
 }
 
-header nav ul {
-    margin: 15px;
-    padding: 0px;
-    display: var(--initiate-flex);
-    justify-content:space-around;
-    list-style-type: none;
-    font-size: 25px;
-    position: var(--relative-position);
-}
+ #Work img {
+    border: 5px solid #830909ea;
+    border-radius: 10px;
+ }
 
-header nav ul a {
-    text-decoration: none;
-}
-
-.hero-img img {
-    display: var(--initiate-flex);
-    margin-left: auto;
-    margin-right: auto;
-    position: var(--relative-position);
-}
-
-#About-Me {
-    display: var(--initiate-flex);
-    margin: 30px;
-    justify-content: center;
-}
-
-#About-Me h2 {
-    text-align: var(--text-center);
-    margin-right: 20px;
-}
-
-.about-header {
-    border-right: 3px solid black;
-    margin: 10px;
-    padding: 5px;
-    position: var(--relative-position);
-}
-
-.about-p {
-    margin: 10px;
-    padding: 5px;
-    position: var(--relative-position);
-    font-size: 20px;
-}
-
-#Work {
-    margin: 30px;
-    padding: 0px;
-    justify-content:center;
-    font-size: 25px;
-}
-
-#Work h2 {
-    text-align: var(--text-center);
-    margin-right: 20px;
-}
-
-.work-header {
-    border-bottom: 3px solid black;
-    margin: 10px;
-    padding: 5px;
-    width: var(--width-50);
-    position: var(--relative-position);
-    left: 26%;
-}
-
-.recipe-link, .code-quiz, .pass-link, .dashboard {
-    padding: 25px;
-    position: var(--relative-position);
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-.recipe-link img, .code-quiz img, .pass-link img, .dashboard img {
-    border: 3px solid darkturquoise;
-}
-
-.recipe-link img {
-    border: 3px solid darkturquoise;
-    width: 70%;
-    height: 60%;
-    left: 16%;
-    position: var(--relative-position);
-}
-
-.code-quiz img, .pass-link img, .dashboard img {
-    border: 3px solid darkturquoise;
-    width: var(--width-50);
-    height: 40%;
-    left: 25%;
-    position: var(--relative-position)
-}
-
-
-.text-over-img-1{
-    position: var(--relative-position);
-    margin-top: 10px;
-    left: 46%;
-}
-
-.text-over-img-2, .text-over-img-3 {
-    position: var(--relative-position);
-    margin-top: 10px;
-    left: 46%;
-}
-.text-over-img-1 p, .text-over-img-2 p, .text-over-img-3 {
-    color: darkturquoise;
-    text-decoration: underline;
-}
-
-.contact-header {
-    text-align: var(--text-center);
-    text-decoration: underline;
-    position: var(--relative-position);
-}
 
 #Contact-Me nav ul {
     margin: 15px;
@@ -151,156 +39,34 @@ header nav ul a {
     font-size: 25px;
 }
 
-#Contact-Me nav ul li {
-    position: var(--relative-position);
-}
-
-
 @media screen and (max-width: 980px) {
-    
-    body {
-        display: var(--initiate-flex);
-        flex-wrap: wrap;
-    }
-
-    header nav ul {
-        left: var(--left-orientation);
-    }
-
-    header nav ul li {
-       padding: 0 10px; 
-    }
-
-    .name-header {
-        left: var(--left-orientation);
-    }
-
-    .hero-img img {
-        width: 100%;
-        height: 130px;
-        top: 90px;
-        left: 50%;
-    }
-
-    .about-header {
-        top: 50px;
-    }
-
-    .about-p {
-        margin: 10px;
-        padding: 5px;
-        top: 50px;
-    }
-
-    .contact-header {
-        left: var(--left-orientation);
-    }
-
-    #Contact-Me nav ul li {
-        padding: 0px 15px;
-        left: var(--left-orientation)
-    }
-
-    .recipe-link img {
-        width: 100%;
-        left: 3%;
-    }
-
-    .code-quiz img, .pass-link img, .dashboard img {
-        width: 80%;
-        left: 11%;
-    }
-    
-    .contact-header {
-        width: var(--width-50);
-        left: 80%;
-    }
-
-    #Contact-Me nav ul {
-        width: var(--width-50);
-        left: 32%;
-        position: var(--relative-position);
-
+    div#avatar {
+        margin-top: 13px;
     }
 }
 
+#quiz img, #password img, #dashboard img {
+    border: 5px solid #830909ea;
+    border-radius: 10px;
+}
 
 @media screen and (max-width: 768px) {
-    
-    body {
-        display: var(--initiate-flex);
-        flex-wrap: wrap;
+    #avatar img {
+        display: none;
     }
 
-    .name-header {
-        left: 50%;
-    }
-
-    header nav ul {
-        left: 50%;
-    }
-
-    .hero-img img {
-        position: var(--relative-position);
-        left: -50%;
-    }
-
-    .about-p p {
+    div#quiz, div#password, div#dashboard {
         width: 100%;
-    }
-
-    .work-header {
-        margin: 0px;
-        padding: 0px;
-        border: none;
-        position: var(--relative-position);
-    }
-
-    .work-header h2 {
-        border-bottom: 2px solid black;
-    }
-
-    .recipe-link, .code-quiz, .pass-link, .dashboard {
-        width: 110%;
-        right: 15%;
-    }
-
-    .contact-header {
-        width: var(--width-50);
-        left: 54%;
-    }
-
-    #Contact-Me nav ul {
-        width: 56%;
-        left: 3%;
     }
 }
 
 
 @media screen and (max-width: 575px) {
-    
-    body {
-        display: var(--initiate-flex);
-        flex-wrap: wrap;
+    #avatar img {
+        display: none;
     }
 
-    .work-header {
-        left: 41%;
-    }
-
-     .text-over-img-1 {
-        left: 59%;
-     }
-
-    .recipe-link img {
-        left: 22%;
-    }
-
-    .code-quiz, .pass-link, .dashboard {
-        left: 4%;
-    }
-
-    .text-over-img-2, .text-over-img-3 {
-        left: 36%;
+    div#quiz, div#password, div#dashboard {
+        width: 100%;
     }
 }
