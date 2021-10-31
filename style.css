@@ -29,7 +29,7 @@ body {
     border-radius: 10px;
 }
 
-div#password, div#dashboard, div#scheduler {
+div#password, div#dashboard, div#scheduler, div#readme {
     margin-top: 15px;
 }
 
@@ -48,7 +48,7 @@ div#password, div#dashboard, div#scheduler {
     }
 }
 
-#quiz img, #password img, #dashboard img, #scheduler img {
+#quiz img, #password img, #dashboard img, #scheduler img, #readme img {
     border: 5px solid #830909ea;
     border-radius: 10px;
 }
@@ -58,7 +58,7 @@ div#password, div#dashboard, div#scheduler {
         display: none;
     }
 
-    div#quiz, div#password, div#dashboard, div#scheduler {
+    div#quiz, div#password, div#dashboard, div#scheduler, div#readme {
         width: 100%;
     }
 }
@@ -69,7 +69,7 @@ div#password, div#dashboard, div#scheduler {
         display: none;
     }
 
-    div#quiz, div#password, div#dashboard, div#scheduler {
+    div#quiz, div#password, div#dashboard, div#scheduler, div#readme {
         width: 100%;
     }
 }
