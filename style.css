@@ -29,7 +29,7 @@ body {
     border-radius: 10px;
 }
 
-div#password, div#dashboard, div#scheduler, div#readme {
+div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#note, div#tracker {
     margin-top: 15px;
 }
 
@@ -48,7 +48,7 @@ div#password, div#dashboard, div#scheduler, div#readme {
     }
 }
 
-#quiz img, #password img, #dashboard img, #scheduler img, #readme img {
+#quiz img, #password img, #dashboard img, #scheduler img, #readme img, #team img, #note img, #tracker img {
     border: 5px solid #830909ea;
     border-radius: 10px;
 }
@@ -58,7 +58,7 @@ div#password, div#dashboard, div#scheduler, div#readme {
         display: none;
     }
 
-    div#quiz, div#password, div#dashboard, div#scheduler, div#readme {
+    div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#note, div#tracker {
         width: 100%;
     }
 }
@@ -69,7 +69,7 @@ div#password, div#dashboard, div#scheduler, div#readme {
         display: none;
     }
 
-    div#quiz, div#password, div#dashboard, div#scheduler, div#readme {
+    div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#note, div#tracker {
         width: 100%;
     }
 }
