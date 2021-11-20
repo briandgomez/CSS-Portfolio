@@ -13,6 +13,10 @@ body {
     background-color: #b3abab !important;
 }
 
+.nav {
+    margin-top: 25px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -20,8 +24,13 @@ body {
     background-attachment: fixed;
 }
 
-#Work p {
-    font-family: monospace;
+#avatar img {
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+#Work {
+    display: contents;
 }
 
 #Work img {
@@ -29,23 +38,29 @@ body {
     border-radius: 10px;
 }
 
+.description {
+    width: 80%;
+}
+
+.description p {
+    margin-top: 10px;
+    margin-left: 100px;
+    font-family: cursive;
+    display: flex;
+}
+
+.description ul {
+    margin-left: 100px;
+    font-family: cursive;
+}
+
+.description a {
+    margin-left: 100px;
+    font-family: cursive;
+}
+
 div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#note, div#tracker {
     margin-top: 15px;
-}
-
-#Contact-Me nav ul {
-    margin: 15px;
-    padding: 0px;
-    display: var(--initiate-flex);
-    justify-content:space-around;
-    list-style-type: none;
-    font-size: 25px;
-}
-
-@media screen and (max-width: 980px) {
-    div#avatar {
-        margin-top: 13px;
-    }
 }
 
 #quiz img, #password img, #dashboard img, #scheduler img, #readme img, #team img, #note img, #tracker img {
@@ -53,23 +68,53 @@ div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#
     border-radius: 10px;
 }
 
-@media screen and (max-width: 768px) {
-    #avatar img {
-        display: none;
+.container {
+    position: fixed;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#Contact-Me nav ul {
+    padding: 0px;
+    list-style-type: none;
+    font-size: 25px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#Contact-Me nav ul li {
+    padding: 30px;
+}
+
+@media screen and (max-width: 980px) {
+    .row p {
+        margin-top: 15px;
     }
 
-    div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#note, div#tracker {
-        width: 100%;
+    #Work img {
+        width: 90%;
     }
 }
 
-
-@media screen and (max-width: 575px) {
-    #avatar img {
-        display: none;
+@media screen and (max-width: 768px) {
+    #About-Me p {
+        font-size: 20px;
     }
 
-    div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#note, div#tracker {
-        width: 100%;
+    .row p {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #About-Me p {
+        font-size: 24px;
+    }
+
+    .row p {
+        margin-top: 15px;
     }
 }
