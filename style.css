@@ -45,18 +45,18 @@ body {
 .description p {
     margin-top: 10px;
     margin-left: 100px;
-    font-family: cursive;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     display: flex;
 }
 
 .description ul {
     margin-left: 100px;
-    font-family: cursive;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .description a {
     margin-left: 100px;
-    font-family: cursive;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#note, div#tracker {
