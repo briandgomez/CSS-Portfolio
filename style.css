@@ -38,6 +38,10 @@ body {
     border-radius: 10px;
 }
 
+.row .description {
+    margin: auto;
+}
+
 .description {
     width: 80%;
 }
@@ -59,20 +63,9 @@ body {
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#note, div#tracker {
+div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#note, div#tracker, div#commerce {
     margin-top: 15px;
-}
-
-#quiz img, #password img, #dashboard img, #scheduler img, #readme img, #team img, #note img, #tracker img {
-    border: 5px solid #830909ea;
-    border-radius: 10px;
-}
-
-.container {
-    position: fixed;
-    top: 39%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 50%;
 }
 
 #Contact-Me nav ul {
@@ -107,6 +100,12 @@ div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#
     .row p {
         margin-top: 15px;
     }
+
+    div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#note, div#tracker, div#commerce {
+        margin-top: 20px;
+        width: 70%;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -114,7 +113,13 @@ div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#
         font-size: 24px;
     }
 
-    .row p {
-        margin-top: 15px;
+    .row .description {
+        margin-left: 90px;
+    }
+
+    div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#note, div#tracker, div#commerce {
+        margin-top: 20px;
+        width: 90%;
+        margin: auto;
     }
 }
