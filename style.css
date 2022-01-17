@@ -63,7 +63,7 @@ body {
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#note, div#tracker, div#commerce, div#regex, div#social-api {
+div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#note, div#tracker, div#commerce, div#regex, div#social-api, div#pwa, div#react {
     margin-top: 15px;
     width: 50%;
 }
@@ -101,7 +101,7 @@ div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#
         margin-top: 15px;
     }
 
-    div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#note, div#tracker, div#commerce, div#regex, div#social-api {
+    div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#note, div#tracker, div#commerce, div#regex, div#social-api, div#pwa, div#react {
         margin-top: 20px;
         width: 70%;
         margin: auto;
@@ -117,7 +117,7 @@ div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#
         margin-left: 90px;
     }
 
-    div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#note, div#tracker, div#commerce, div#regex, div#social-api {
+    div#quiz, div#password, div#dashboard, div#scheduler, div#readme, div#team, div#note, div#tracker, div#commerce, div#regex, div#social-api, div#pwa, div#react {
         margin-top: 20px;
         width: 90%;
         margin: auto;
